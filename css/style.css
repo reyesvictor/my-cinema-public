@@ -1,0 +1,477 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Avenir-Medium.otf);
+}
+
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: "Avenir" !important;
+  overflow-x: hidden;
+}
+
+.container-style {
+  width: 50vw;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1vw;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  background: none;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn:hover {
+  color: #ebebd3;
+  background: grey;
+  outline: none;
+}
+
+.btn:active {
+  color: #1d3461;
+  background: #ebebd3;
+  outline: none;
+}
+
+.btn-review {
+  padding: 0.5vw;
+  height: 2vw;
+  margin-left: 1vw;
+  outline: none;
+}
+
+.btn-member-search {
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  height: 2vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: 'Avenir';
+}
+
+.btn-member-search:hover {
+  color: grey;
+}
+
+/* COLOR PALETTE
+BG #1D3461
+BG LIGHT #6290C8
+BEIGE #EBEBD3 
+LIGHT TEXT #E0FBFC
+BOLD TEXT #C2DFE3
+
+*/
+
+/* HOMEPAGE */
+div#homepage-container {
+  text-align-last: center;
+}
+
+img#welcome-gif {
+  margin-bottom: 2vw;
+}
+
+/* texte non selectionnable */
+nav ul li a,
+div#uppernews-container h2,
+#user-menu li a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* INPUT FOR CONNECTION */
+input#connect-input-id-perso {
+  border-radius: 0.3vw;
+  margin-left: 1vw;
+  padding: 0.2vw;
+  outline: none;
+  color: black;
+  font-family: "Avenir";
+  font-weight: lighter;
+}
+
+/* MENU */
+header {
+  width: 100vw;
+  background: #1d3461;
+}
+
+#logo {
+  width: auto;
+  height: 3vw;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+nav {
+  font-size: 1vw;
+  display: flex;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 1vw;
+}
+
+nav ul li a {
+  color: white;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: #ebebd3;
+}
+
+nav ul li a:active {
+  font-size: 1.05vw;
+}
+
+#connect-li-menu {
+  color: lightgreen;
+}
+
+#disconnect-li-menu {
+  color: lightcoral;
+}
+
+p#error-msg {
+  position: absolute;
+  margin: 0;
+  color: red;
+}
+
+/* USER MENU */
+#user-menu-container {
+  background: #ebebd3;
+}
+
+div#member-sub-status {
+  margin-bottom: 1vw;
+}
+
+.btn-subs {
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#btn-sub-add {
+  background: green;
+  color: white;
+  outline: none;
+}
+
+#btn-sub-add:hover {
+  background: green;
+  color: black;
+  outline: none;
+}
+
+#btn-sub-del {
+  background: grey;
+  color: black;
+  outline: none;
+}
+
+#btn-sub-del:hover {
+  background: black;
+  color: grey;
+  outline: none;
+}
+
+#btn-sub-mod {
+  margin-bottom: 0.7vw;
+}
+
+#btn-sub-mod:hover {
+  color: lightcoral;
+  outline: none;
+}
+
+#user-menu li {
+  list-style: none;
+  margin-left: 2vw;
+}
+
+#user-menu li a:hover {
+  color: darkgrey;
+}
+
+/* BARRE DE RECHERCHE */
+div#search-bg {
+  width: 100vw;
+  background: white;
+}
+
+div#search-container {
+  display: flex;
+  padding: 0;
+}
+
+img#search-icon {
+  width: auto;
+  height: 2.3vw;
+  opacity: 0.7;
+}
+
+input#search {
+  width: 35vw;
+  display: block;
+}
+
+input#search:focus,
+select#filter:focus,
+select#select-r:focus {
+  outline-width: 0;
+}
+
+input#search {
+  border: none;
+}
+
+input#search,
+select#filter {
+  border-radius: 1vw;
+  font-family: "Avenir" !important;
+  font-size: 0.8vw;
+  padding: 0.7vw;
+}
+
+select#filter,
+select#select-r {
+  width: 10vw;
+  border: 1px solid lightgrey;
+}
+
+select#select-r {
+  border-radius: 1vw;
+  font-family: "Avenir" !important;
+  font-size: 0.8vw;
+  padding: 0.3vw;
+  margin-left: 0.5vw;
+}
+
+/* USER REVIEWS */
+#review-title {
+  margin-top: 0;
+  margin-bottom: 0.3vw;
+}
+
+#review-content {
+  word-break: break-word;
+}
+
+/* MOVIES BY DATE */
+div#uppernews-container {
+  width: 100vw;
+  height: 6vw;
+  background-image: url("../img/newmovies.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  /* background-size: cover; */
+  text-align: center;
+}
+
+div#uppernews-container h2 {
+  margin: 0 auto;
+  padding: 1.25vw;
+  color: lightgrey;
+  width: fit-content;
+}
+
+div#uppernews-container h2:hover {
+  color: white;
+  cursor: pointer;
+}
+
+div#uppernews-container h2:active {
+  font-size: 1.52em;
+}
+
+/* MOVIES */
+.container-movie-style {
+  width: 100vw;
+}
+
+.movie-result {
+  width: 49%;
+  display: inline-flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 13vw;
+  margin-right: 0.25vw;
+  margin-left: 0.25vw;
+}
+
+.movie-result-description {
+  padding: 1vw;
+  position: relative;
+}
+
+.movie-result-description h3 {
+  margin-top: 0;
+  margin-bottom: 0.1vw;
+  max-width: 91%;
+  width: 91%;
+  display: inline-flex;
+}
+
+.movie-result-description .date {
+  margin-top: 0;
+  color: grey;
+}
+
+.movie-result-description p {
+  font-size: 0.7vw;
+}
+
+div.seemore-container {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid lightgrey;
+}
+
+p.seemore {
+  width: fit-content;
+}
+
+p.seemore:hover {
+  color: #c2dfe3;
+  cursor: pointer;
+}
+
+p.seemore:active {
+  color: black;
+}
+
+.movie-result img {
+  /* width: 40%; */
+  height: 13vw;
+  width: auto;
+}
+
+img.historic-icon {
+  width: 1vw;
+  height: 1vw;
+}
+
+/* MOVIE CONTAINER PAGE FULL INFORMATION */
+button#goback {
+  position: absolute;
+  margin-left: 16vw;
+  margin-top: 1vw;
+}
+
+.container-movie-style {
+  width: 100%;
+}
+div#main-movie-container {
+  background-size: cover;
+  background-position: center;
+}
+
+div#movie-inf-container {
+  padding: 1vw;
+}
+
+#main-movie {
+  display: flex;
+}
+
+.write-review-textarea {
+  width: 30vw;
+  font-family: "Avenir";
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+div#review-container {
+  display: flex;
+}
+
+/* DATE PICKER */
+div#date-picker-container {
+  text-align: center;
+}
+
+input#date-picker, input#search-membersubscriptionbyid, input#search-member {
+  border-radius: 0.5vw;
+  border: 1px solid lightgrey;
+  padding: 0.5vw;
+  font-family: "Avenir";
+  outline: none;
+  resize: none;
+  overflow: auto;
+  text-align: center;
+  width: 13.5vw;
+}
+
+/* MAIN CONTAINER */
+div#main-container {
+  background-color: white;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  overflow: hidden;
+  border-radius: 1vw;
+}
+
+/* MAIN CONTAINER TITLE */
+div#title-container {
+  display: flex;
+  margin-bottom: 1vw;
+}
+
+div#title-container h1 {
+  margin: 0;
+}
+
+/* FOOTER */
+footer#footer {
+  height: 15vw;
+  width: 100vw;
+  background: #1d3461;
+  color: lightgrey;
+}
+
+/* LOST  */
+.lost {
+  width: 22vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* SUBSCRIPTION */
+div#member-sub-container {
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+
+.subscription-main-div {
+  margin-top: 3vw;
+}
+
+#member-sub-options {
+  margin-bottom: 4vw;
+}
